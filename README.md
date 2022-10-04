@@ -1,4 +1,12 @@
-# (FSM)
+# [ACCV2022] Network Pruning via Feature Shift Minimization
+
+This is the official code for our ACCV22 paper: [Network Pruning via Feature Shift Minimization](https://arxiv.org/abs/2207.02632).
+
+Authors: Yuanzhi Duan, Yue Zhou, Peng He, Qiang Liu, Shukai Duan, Xiaofang Hu.
+
+The diagram of feature shift is:
+
+- ![process](imgs/process.png)
 
 ## Environments
 
@@ -11,17 +19,11 @@ The code has been tested in the following environments:
 
 ## Pre-trained Models
 
-**CIFAR-10:**
-
-[Vgg-16](https://drive.google.com/open?id=1i3ifLh70y1nb8d4mazNzyC4I27jQcHrE) | [ResNet56](https://drive.google.com/open?id=1f1iSGvYFjSKIvzTko4fXFCbS-8dw556T) | [GoogLeNet](https://drive.google.com/open?id=1rYMazSyMbWwkCGCLvofNKwl58W6mmg5c)
-
-**ImageNet:**
-
-[ResNet50](https://drive.google.com/open?id=1OYpVB84BMU0y-KU7PdEPhbHwODmFvPbB)
+[Vgg-16](https://drive.google.com/open?id=1i3ifLh70y1nb8d4mazNzyC4I27jQcHrE) | [ResNet56](https://drive.google.com/open?id=1f1iSGvYFjSKIvzTko4fXFCbS-8dw556T) | [GoogLeNet](https://drive.google.com/open?id=1rYMazSyMbWwkCGCLvofNKwl58W6mmg5c)  |  [ResNet50](https://drive.google.com/open?id=1OYpVB84BMU0y-KU7PdEPhbHwODmFvPbB)
 
 ## Running Code
 
-The experiment settings are as follows:
+The settings are listed below:
 
 **1. VGGNet**
 
@@ -172,3 +174,6 @@ python main.py \
 --save_id 1
 ```
 
+## Acknowledgments
+
+Our implementation partially reuses [HRank's code](https://github.com/lmbxmu/HRank).
